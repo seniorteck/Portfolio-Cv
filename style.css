@@ -66,7 +66,32 @@ body{
     word-break: keep-all;
     width: 230px;
     line-height: 148.69%;
+    transition: 250ms linear;
+    animation-name: text;
+    animation-duration: 250ms;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
 }
+
+@keyframes text {
+    from{
+        color: #fff;
+    }
+
+    to{
+        color: #171717;
+    }
+
+    from{
+        color: rgb(243, 75, 75);
+    }
+
+    to{
+        color: var(--deepred);
+    }
+}
+
+
 
 .hero-main p{
     font-size: .8rem;
@@ -312,11 +337,21 @@ form button:hover{
 
 .social-links span{
     margin: 0 20px;
+    
 }
 
 .social-links a{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+    background: #171717;
+    padding: 8px 10px;
+    border-radius: 50px;
+    transition: 250ms ease-in;
+}
+
+.social-links a:hover{
+    background-color: var(--onhover);
 }
 
 .copyright{
