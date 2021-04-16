@@ -95,7 +95,7 @@ body{
     top: -30px;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .project img{
@@ -110,7 +110,7 @@ body{
 }
 
 .experience-wrapper h2{
-    font-size: .7rem;
+    font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
     margin-bottom: 20px;
@@ -122,5 +122,53 @@ body{
 }
 
 .experience-items h3{
-    font-size: ;
+    font-size: .85rem;
+}
+
+.experience-items span{
+    font-size: .7rem;
+    color: var(--deepred);
+    
+}
+
+.experience-items p{
+    font-size: .8rem;
+    margin: 10px 0;
+    line-height: 1.3rem;
+}
+
+.skills{
+    margin-top: 50px;
+}
+
+.skills div{
+    text-align: center;
+    background-color: #171717;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.skills .icon{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills h2{
+    margin-top: 50px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 20px;
+}
+
+.skills h4{
+    font-size: .85rem;
+}
+
+.skills p{
+    font-size: .85rem;
+    font-size: .8rem;
+    margin: 10px 0;
+    line-height: 1.3rem
 }
