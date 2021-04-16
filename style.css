@@ -11,6 +11,7 @@
 :root{
     --deepblack: #000;
     --deepred: #F00;
+    --onhover: rgb(190, 5, 5);
 }
 
 
@@ -39,19 +40,24 @@ body{
 }
 
 .hamburger{
-    width: 34px;
+    width: 30px;
     height: 30px;
     word-break: break-all;
     font-weight: 800;
     line-height: 88.69%;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
 .hero-main{
-    margin: 80px 0;
+    margin: 50px 0;
+    padding: 80px 0;
     width: 100%;
+    background: url(./images/Kareem.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .hero-main h2{
@@ -80,6 +86,10 @@ body{
     background: var(--deepred);
 }
 
+.hero-main button:hover{
+    background: var(--onhover);
+}
+
 .hero-main button a{
     text-decoration: none;
     color: #fff;
@@ -91,11 +101,19 @@ body{
 }
 
 .project h4{
-    position: absolute;
-    top: -30px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: .8rem;
+}
+
+.project h4::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--deepred);
 }
 
 .project img{
@@ -107,13 +125,23 @@ body{
 
 .experience-wrapper{
     margin-top: 40px;
+    position: relative;
 }
 
 .experience-wrapper h2{
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.experience-wrapper h2::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--deepred);
 }
 
 .experience-items{
@@ -139,6 +167,7 @@ body{
 
 .skills{
     margin-top: 50px;
+    position: relative;
 }
 
 .skills div{
@@ -156,10 +185,19 @@ body{
 
 .skills h2{
     margin-top: 50px;
+    margin-bottom: 40px;   
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    margin-bottom: 20px;
+}
+
+.skills h2::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--deepred);
 }
 
 .skills h4{
@@ -171,4 +209,118 @@ body{
     font-size: .8rem;
     margin: 10px 0;
     line-height: 1.3rem
+}
+
+.offer{
+    margin-top: 50px;
+    position: relative;
+}
+
+.offer h3{
+    margin-top: 50px;
+    font-size: .85rem;
+}
+
+.offer h3::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--deepred);
+}
+
+.offer p{
+    font-size: .85rem;
+    font-size: .8rem;
+    margin: 30px 0;
+    line-height: 1.3rem
+}
+
+.contact{
+    position: relative;
+}
+
+.contact h3{
+    margin-top: 20px;
+    font-size: .85rem;
+}
+
+.contact h3::before{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--deepred);
+}
+
+.contact p{
+    font-size: .85rem;
+    font-size: .8rem;
+    margin: 30px 0;
+    line-height: 1.3rem
+}
+
+form input{
+    width: 100%;
+    height: 39px;
+    padding: 10px 20px;
+    font-size: .6rem;
+    margin: 10px auto;
+    background: #171717;
+    border: 0;
+    border-radius: 10px;
+}
+
+form textarea{
+    width: 100%;
+    height: 200px;
+    background: #171717;
+    border: 0;
+    padding: 10px 20px;
+    outline: 0;
+    font-size: .6rem;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    height: 39px;
+    margin: 10px 0;
+    background: var(--deepred);
+    color: #fff;
+    font-weight: 800;
+}
+
+form button:hover{
+    background: var(--onhover);
+}
+
+
+.social-links{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.social-links span{
+    margin: 0 20px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright{
+    font-size: .6rem;
+    text-align: center;
+    display: block;
 }
