@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --deepblack: #000;
+    --deepred: #F00;
+}
+
+
+body{
+    background: var(--deepblack);
+    color: #fff;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 12px;
+    width: 55px;
+    word-break: break-all;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.hamburger{
+    width: 34px;
+    height: 30px;
+    word-break: break-all;
+    font-weight: 800;
+    line-height: 88.69%;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.hero-main{
+    margin: 80px 0;
+    width: 100%;
+}
+
+.hero-main h2{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    word-break: keep-all;
+    width: 230px;
+    line-height: 148.69%;
+}
+
+.hero-main p{
+    font-size: .8rem;
+    line-height: 1.4rem;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.hero-main button{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    height: 39px;
+    margin: 10px 0;
+    background: var(--deepred);
+}
+
+.hero-main button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+.project{
+    position: relative;
+}
+
+.project h4{
+    position: absolute;
+    top: -30px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .7rem;
+}
+
+.project img{
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+
+.experience-wrapper{
+    margin-top: 40px;
+}
+
+.experience-wrapper h2{
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 20px;
+}
+
+.experience-items{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.experience-items h3{
+    font-size: ;
+}
