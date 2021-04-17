@@ -50,6 +50,24 @@ body{
     text-transform: uppercase;
 }
 
+
+.hamburger-links{
+    display: none;
+}
+
+
+.hamburger-links li{
+    list-style-type: none;
+    font-size: .9rem;
+    margin: 0 20px;
+    transition: 250ms linear;
+}
+
+.hamburger-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .hero-main{
     margin: 50px 0;
     padding: 80px 0;
@@ -91,8 +109,6 @@ body{
     }
 }
 
-
-
 .hero-main p{
     font-size: .8rem;
     line-height: 1.4rem;
@@ -102,6 +118,7 @@ body{
 
 .hero-main button{
     width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     border: none;
     outline: 0;
@@ -125,8 +142,6 @@ body{
     position: relative;
     text-align: center;
 }
-
-
 
 .project h4{
     margin-bottom: 40px;
@@ -184,7 +199,6 @@ body{
 .experience-items span{
     font-size: .7rem;
     color: var(--deepred);
-    
 }
 
 .experience-items p{
@@ -198,7 +212,7 @@ body{
     position: relative;
 }
 
-.skills div{
+.skills-wrapper div{
     text-align: center;
     background-color: #171717;
     padding: 15px;
@@ -292,6 +306,7 @@ body{
 
 form input{
     width: 100%;
+    max-width: 350px;
     height: 39px;
     padding: 10px 20px;
     font-size: .6rem;
@@ -303,6 +318,7 @@ form input{
 
 form textarea{
     width: 100%;
+    max-width: 700px;
     height: 200px;
     background: #171717;
     border: 0;
@@ -317,6 +333,7 @@ form textarea{
 
 form button{
     width: 100%;
+    max-width: 700px;
     border-radius: 10px;
     border: none;
     outline: 0;
@@ -361,4 +378,116 @@ form button:hover{
     font-size: .6rem;
     text-align: center;
     display: block;
+}
+
+@media screen and (min-width: 600px){
+
+    .project-gallery{
+        display: flex;
+    }
+
+    .project1{
+        margin: 0 5px;
+    }
+
+    .project2{
+        margin: 0 5px;
+    }
+
+    .project img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+
+    .hero-main{
+        background-size: contain;
+        background-position: top right;
+    }
+
+    .hero-main h2{
+        font-size: 1.8rem;
+        margin: 20px 0;
+        width: 430px;
+    }
+
+    .hero-main p{
+        width: 400px;
+        margin: 10px 0;    
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .hamburger-links{
+        display: flex;
+    }
+
+    .hamburger-links li:hover{
+        padding: 7px 10px;
+        background-color: var(--onhover);
+    }
+
+
+    .experience-items{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .experience-one, .experience-two, .experience-three, .experience-four{
+        margin: 20px 0;
+        width: 350px;
+    }
+
+    .skills-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .skills-wrapper div{
+        width: 350px;
+        margin: 20px 0;
+
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    
+
+    .hero-main p{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        width: 500px;
+        margin: 10px 0;
+        
+    }
+
+    .project img{
+        width: 80%;
+    }
+
+    .experience-items{
+        padding: 0  50px;
+    }
+
+
+    .skills-wrapper{
+        padding: 0  50px;
+    }
+
+
+    form{
+        margin: 0 auto;
+        text-align: center;
+    }
 }
